@@ -1,6 +1,6 @@
 package com.techreturners.cats;
 
-public class CheetahCat extends CatGeneral{
+public class CheetahCat extends CatInterface {
 
     public CheetahCat() {
         super();

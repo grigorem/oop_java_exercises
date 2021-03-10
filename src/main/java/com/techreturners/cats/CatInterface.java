@@ -1,9 +1,13 @@
 package com.techreturners.cats;
 
-public abstract class CatGeneral implements Cat {
+public abstract class CatInterface implements Cat {
     int height;
-    boolean asleep = false;
+    boolean asleep;
     String setting;
+
+    public CatInterface() {
+        asleep = false;
+    }
 
     public void goToSleep() {
         asleep = true;

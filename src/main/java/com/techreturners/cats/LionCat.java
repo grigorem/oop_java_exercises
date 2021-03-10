@@ -1,6 +1,6 @@
 package com.techreturners.cats;
 
-public class LionCat extends CatGeneral{
+public class LionCat extends CatInterface {
 
     public LionCat() {
         super();

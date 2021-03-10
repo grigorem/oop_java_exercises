@@ -1,6 +1,8 @@
 package com.techreturners.cats;
 
-public class DomesticCat extends CatGeneral {
+import java.util.Random;
+
+public class DomesticCat extends CatInterface {
 
     public DomesticCat() {
         super();
@@ -10,6 +12,12 @@ public class DomesticCat extends CatGeneral {
     }
 
     public String eat() {
+        Random rand = new Random();
+
+        if (rand.nextInt(10) >= 8) {
+            return "It will do I suppose";
+        }
+
         return "Purrrrrrr";
     }
 
