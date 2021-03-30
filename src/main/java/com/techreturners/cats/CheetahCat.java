@@ -1,19 +1,8 @@
 package com.techreturners.cats;
 
-public class CheetahCat extends CatInterface {
+public class CheetahCat extends AbstractCat {
 
     public CheetahCat() {
-        super();
-
-        height = 500;
-        setting = "wild";
-    }
-
-    public String eat() {
-        return "Zzzzzzz";
-    }
-
-    public void run() {
-
+        super(500, "wild", "Zzzzzzz");
     }
 }

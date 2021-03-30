@@ -2,15 +2,13 @@ package com.techreturners.cats;
 
 import java.util.Random;
 
-public class DomesticCat extends CatInterface {
+public class DomesticCat extends AbstractCat {
 
     public DomesticCat() {
-        super();
-
-        height = 23;
-        setting = "domestic";
+        super(23, "domestic", "Purrrrrrr");
     }
 
+    @Override
     public String eat() {
         Random rand = new Random();
 
@@ -18,10 +16,6 @@ public class DomesticCat extends CatInterface {
             return "It will do I suppose";
         }
 
-        return "Purrrrrrr";
-    }
-
-    public void run() {
-
+        return eatingResponse;
     }
 }

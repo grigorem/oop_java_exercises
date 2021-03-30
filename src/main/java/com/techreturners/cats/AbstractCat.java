@@ -1,12 +1,15 @@
 package com.techreturners.cats;
 
-public abstract class CatInterface implements Cat {
+public abstract class AbstractCat implements Cat {
     int height;
-    boolean asleep;
+    boolean asleep = false;
     String setting;
+    String eatingResponse;
 
-    public CatInterface() {
-        asleep = false;
+    public AbstractCat(int height, String setting, String eatingResponse) {
+        this.height = height;
+        this.setting = setting;
+        this.eatingResponse = eatingResponse;
     }
 
     public void goToSleep() {
@@ -27,5 +30,9 @@ public abstract class CatInterface implements Cat {
 
     public int getAverageHeight() {
         return height;
+    }
+
+    public String eat() {
+        return eatingResponse;
     }
 }

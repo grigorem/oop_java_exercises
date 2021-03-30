@@ -61,6 +61,7 @@ public class CatTest {
     @Test
     public void feedTheCat() {
         Cat domesticCat = new DomesticCat();
+        assertTrue(domesticCat.eat().equals("Purrrrrrr") || domesticCat.eat().equals("It will do I suppose"));
         assertEquals("Purrrrrrr", domesticCat.eat());
     }
 }
